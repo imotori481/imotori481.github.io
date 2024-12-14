@@ -28,11 +28,20 @@ h1{
     text-align: center;
     margin: 0;
     padding: 10px 0;
-    color: #0e01c9;;
+    color: #0e01c9;
+}
+
+h2{
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    padding: 10px 0;
 }
 
 li{
     font-weight: bold;
+    line-height: 120%;
 }
 
 .indent_img{
