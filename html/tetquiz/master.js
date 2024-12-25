@@ -60,7 +60,7 @@ const quiz = [
         correct: 'あがるのかよぉ～' 
     },
     { 
-        question: 'Q13 クラシックテトリスでの、柔軟な回転を行うシステムの非公式な名前は？', 
+        question: 'Q13 クラシックテトリスでの、柔軟な回転を行うシステムの名前は？', 
         choices: ['SRS', 'T-Spin', 'All-Spin', 'ARS'], 
         correct: 'ARS' 
     },
