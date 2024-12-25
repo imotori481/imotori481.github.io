@@ -83,6 +83,7 @@ let score = 0;
 const buttons = document.querySelectorAll('#choice button');
 const questionElement = document.getElementById('question');
 const choiceContainer = document.getElementById('choice');
+const imageElement = document.getElementById("display-image");
 
 const DrawImages = (q) => {
     const images = [
@@ -106,7 +107,6 @@ const DrawImages = (q) => {
         selectedImage = images[0];
     }
 
-    const imageElement = document.getElementById("display-image");
     imageElement.src = selectedImage;
     imageElement.alt = `${selectedImage}`;
 };
@@ -120,11 +120,10 @@ const SetupQuiz = () => {
 };
 
 const DisplayScore = () => {
-    // 問題とボタンを非表示にする
     questionElement.classList.add('hidden');
     choiceContainer.classList.add('hidden');
+    imageElement.classList.add('hidden');
 
-    // 結果を表示
     const container = document.getElementById('container');
     const resultParagraph = document.createElement('p');
     resultParagraph.textContent = `あなたのスコアは ${score} / ${quizLength} です。`;
@@ -136,7 +135,7 @@ const Result = () => {
     const resultParagraph = document.createElement('p');
     let resultMessage = document.createElement('p');
     let result = "不合格";
-    resultMessage.textContent = "EXCELLENT, but... let's go better next time.";
+    resultMessage.textContent = "EXCELLENT but... let's go better next time.";
     if (score >= quizLength * 0.8) {
         result = "合格";
         resultMessage.textContent = "YOU ARE THE GRAND TETRIS QUIZ MASTER!";
