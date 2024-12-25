@@ -100,9 +100,11 @@ const DrawImages = (q) => {
     } else if (q === 6) {
         selectedImage = images[2];
     } else if (q === 10) {
-        selectedImage = images[3]
+        selectedImage = images[3];
     } else if (q === 14) {
-        selectedImage = images[4]
+        selectedImage = images[4];
+    } else if (q === 15) {
+        selectedImage = images[0];
     } else {
         selectedImage = images[0];
     }
