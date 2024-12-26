@@ -1,7 +1,7 @@
 const quiz = [
     { 
-        question: 'Q ', 
-        choices: ['', '', '', ''], 
+        question: 'ちょっとまて、どうやってここに来た', 
+        choices: ['B', 'A', 'C', 'K'], 
         correct: '' 
     },
 ];
