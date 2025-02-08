@@ -69,3 +69,8 @@ li{
 .hidden {
     display: none;
 }
+
+.strong{
+    color: red;
+    font-size: 48;
+}
