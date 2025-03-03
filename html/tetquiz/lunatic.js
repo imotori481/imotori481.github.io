@@ -1,7 +1,147 @@
 const quiz = [
     { 
-        question: 'ちょっとまて、どうやってここに来た', 
-        choices: ['B', 'A', 'C', 'K'], 
+        question: 'Q1 ', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q2 2面3枚目のスペカの効果は？', 
+        choices: ['HideHold & 4列中開け', 'NoHold & 4列中開け', 'NoNext & 4列中開け'], 
+        correct: 'NoHold & 4列中開け' 
+    },
+    { 
+        question: 'Q3 ', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q4 ', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q5 ', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q6 ', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q7 ', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q8 ', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q9', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q10', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q11', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q12', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q13', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q14', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q15', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q16', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q17', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q18', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q19', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q20', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q21', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q22', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q23', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q24', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q25', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q26', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q27', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q28', 
+        choices: ['', '', '', ''], 
+        correct: '' 
+    },
+    { 
+        question: 'Q29', 
+        choices: ['', '', '', ''], 
         correct: '' 
     },
 ];
@@ -38,7 +178,7 @@ const Result = () => {
     const resultParagraph = document.createElement('p');
     let resultMessage = document.createElement('p');
     let result = "不合格";
-    resultMessage.textContent = "";
+    resultMessage.textContent = "30分前に出直しな！";
     if (score >= quizLength * 0.8) {
         result = "合格";
         resultMessage.textContent = "";
