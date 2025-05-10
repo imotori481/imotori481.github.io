@@ -11,6 +11,58 @@
     z-index: -1;
 }
 
+.bg_tetris{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/t_20250209-2.jpg");
+    background-size: cover; 
+    background-position: center;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.bg_selfIntro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bgintro.JPG");
+    background-size: cover; 
+    background-position: center;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.bg_gen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bggen.jpg");
+    background-size: cover; 
+    background-position: center;
+    filter: blur(4px) brightness(0.9);
+    z-index: -1;
+}
+
+.bg_mod{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bgmod.jpg");
+    background-size: cover; 
+    background-position: center;
+    filter: blur(4px);
+    z-index: -1;
+}
+
 .main{
     font-family: 'Ubuntu Mono', monospace;
     width: 800px;
