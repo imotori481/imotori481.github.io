@@ -1,8 +1,8 @@
 const quiz = [
     { 
-        question: 'Q1 ', 
-        choices: ['', '', '', ''], 
-        correct: '' 
+        question: 'Q1 制作中です、TGM4のようにしばらくお待ちください', 
+        choices: ['はい', 'しょうがねえなあ', '思いっきり作りかけでもいいからやりたい！'], 
+        correct: '思いっきり作りかけでもいいからやりたい！' 
     },
     { 
         question: 'Q2 2面3枚目のスペカの効果は？', 
@@ -11,137 +11,137 @@ const quiz = [
     },
     { 
         question: 'Q3 ', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q4 ', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q5 ', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q6 ', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q7 ', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q8 ', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q9', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q10', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q11', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q12', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q13', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q14', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q15', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q16', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q17', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q18', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q19', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q20', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q21', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q22', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q23', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q24', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q25', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q26', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q27', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q28', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
     { 
         question: 'Q29', 
-        choices: ['', '', '', ''], 
+        choices: ['', '', ''], 
         correct: '' 
     },
 ];
