@@ -1,8 +1,8 @@
 const quiz = [
     { 
-        question: 'Q1 制作中です、TGM4のようにしばらくお待ちください', 
-        choices: ['はい', 'しょうがねえなあ', '思いっきり作りかけでもいいからやりたい！'], 
-        correct: '思いっきり作りかけでもいいからやりたい！' 
+        question: 'Q1 TouhouMinoの作者は誰？', 
+        choices: ['ZUN', 'Dimentio', ''], 
+        correct: '' 
     },
     { 
         question: 'Q2 2面3枚目のスペカの効果は？', 
@@ -10,14 +10,14 @@ const quiz = [
         correct: 'NoHold & 4列中開け' 
     },
     { 
-        question: 'Q3 ', 
-        choices: ['', '', ''], 
-        correct: '' 
+        question: 'Q3 3面1枚目のスペカでは、何列目に単体でミノが出現する？', 
+        choices: ['2列目', '6列目', '9列目'], 
+        correct: '2列目' 
     },
     { 
-        question: 'Q4 ', 
-        choices: ['', '', ''], 
-        correct: '' 
+        question: 'Q4 4面2枚目のスペカでは、固定猶予は何Fになる？', 
+        choices: ['0', '8', '15'], 
+        correct: '0' 
     },
     { 
         question: 'Q5 ', 
@@ -140,7 +140,7 @@ const quiz = [
         correct: '' 
     },
     { 
-        question: 'Q29', 
+        question: 'Q29 ', 
         choices: ['', '', ''], 
         correct: '' 
     },
