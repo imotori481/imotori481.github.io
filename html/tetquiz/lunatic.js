@@ -1,7 +1,7 @@
 const quiz = [
     { 
         question: 'Q1 TouhouMinoの作者は誰？', 
-        choices: ['ZUN', 'Dimentio', ''], 
+        choices: ['osk', 'Dimentio', '三原一郎'], 
         correct: '' 
     },
     { 
@@ -16,38 +16,38 @@ const quiz = [
     },
     { 
         question: 'Q4 4面2枚目のスペカでは、固定猶予は何Fになる？', 
-        choices: ['0', '8', '15'], 
-        correct: '0' 
+        choices: ['1', '8', '15'], 
+        correct: '1' 
     },
     { 
-        question: 'Q5 ', 
-        choices: ['', '', ''], 
-        correct: '' 
+        question: 'Q5 TouhouMino_GMの回転法則は？', 
+        choices: ['SRS-X', 'DRS', 'Classic3'], 
+        correct: 'Classic3' 
     },
     { 
-        question: 'Q6 ', 
-        choices: ['', '', ''], 
-        correct: '' 
+        question: 'Q6 6面3枚目のスペカでは、何が消滅する？', 
+        choices: ['操作中のミノ', '設置したミノ', 'ネクスト'], 
+        correct: '操作中のミノ' 
     },
     { 
-        question: 'Q7 ', 
-        choices: ['', '', ''], 
-        correct: '' 
+        question: 'Q7 7面では何が起こる？', 
+        choices: ['IミノがOミノに変化する', 'Oミノがハードブロックに変化する', '実は何も起こってない'], 
+        correct: 'IミノがOミノに変化する' 
     },
     { 
-        question: 'Q8 ', 
-        choices: ['', '', ''], 
-        correct: '' 
+        question: 'Q8 TouhouMinoは何のゲームのMod？', 
+        choices: ['Minecraft', 'NullpoMino', 'Heboris'], 
+        correct: 'NullpoMino' 
     },
     { 
-        question: 'Q9', 
-        choices: ['', '', ''], 
-        correct: '' 
+        question: 'Q9 9面2枚目のスペカでは何が起こる？', 
+        choices: ['ハードブロックが出現する', 'ミノの色がランダムになる', '虹色のミノがランダムにせり上がる'], 
+        correct: 'ハードブロックが出現する' 
     },
     { 
-        question: 'Q10', 
-        choices: ['', '', ''], 
-        correct: '' 
+        question: 'Q10 10面1枚目のスペカでは、何が起こる？', 
+        choices: ['上4段が消去される', '上5段が消去される', '上6段が消去される'], 
+        correct: '上5段が消去される' 
     },
     { 
         question: 'Q11', 
