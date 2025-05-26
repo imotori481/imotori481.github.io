@@ -50,33 +50,33 @@ const quiz = [
         correct: '上5段が消去される' 
     },
     { 
-        question: 'Q11', 
+        question: 'Q11 11面1枚目のスペカでは、虹色のせり上がり出現するが、最大何列せり上がる？', 
         choices: ['', '', ''], 
         correct: '' 
     },
     { 
-        question: 'Q12', 
+        question: 'Q12 12面3枚目のスペカでは、何が起こる？', 
+        choices: ['消えロール', 'X-RAY', '操作左右反転'], 
+        correct: '' 
+    },
+    { 
+        question: 'Q13 13面3枚目のスペカでは、終了時に何が起こる？', 
+        choices: ['Tスピントリプルの地形出現', 'ダークガベージ消滅', '何も起こらない'], 
+        correct: '' 
+    },
+    { 
+        question: 'Q14 TouhouMinoで使用されているアレンジ楽曲は何曲使用されている？', 
         choices: ['', '', ''], 
         correct: '' 
     },
     { 
-        question: 'Q13', 
-        choices: ['', '', ''], 
+        question: 'Q15 15面1枚目のスペカでは、何に最も気をつける必要がある？', 
+        choices: ['2段以上のライン消去', 'テトリス回数', '権利侵害'], 
         correct: '' 
     },
     { 
-        question: 'Q14', 
-        choices: ['', '', ''], 
-        correct: '' 
-    },
-    { 
-        question: 'Q15', 
-        choices: ['', '', ''], 
-        correct: '' 
-    },
-    { 
-        question: 'Q16', 
-        choices: ['', '', ''], 
+        question: 'Q16 16面1枚目のスペカでは、縛りなしの場合何が起こる？', 
+        choices: ['Jミノのみ出現する', 'ホールド使用不可', 'Lミノのみ出現する'], 
         correct: '' 
     },
     { 
