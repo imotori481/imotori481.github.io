@@ -19,6 +19,7 @@
             <!--TEMPLATE
                 <li><a href="#yyyymmdd">yyyy/mm/dd </a></li>
             -->
+                <li><a href="#202505">2025/05/ OS自作まとめ編 1~5</a></li>
                 <li><a href="#20250526">2025/05/26 OS自作5</a></li>
                 <li><a href="#20250520">2025/05/20 OS自作4</a></li>
                 <li><a href="#20250516">2025/05/16 OS自作3</a></li>
@@ -38,6 +39,77 @@
                     </div>
                 </p>
                 -->
+                <li id="20250530">2025/05/30 OS自作まとめ編 1~5</li>
+                <p>第1回から第5回までの重要な点や補足などを、物凄く適当かつ気の向くままにまとめます。
+                    <br>※もし間違いに気づいた方は、各SNSのDMにご指摘ください。
+
+                    <p><strong>・UEFI BIOS</strong></p>
+                    <p>Unified Extensible Firmware Interface、Basic Input/Output System
+                        <br>OSを起動するため、つまりブートローダを読み出す機能。
+                        <br>UEFI BIOSとBIOSは別物ですが、今回はUEFIという表現で統一。
+                        <br>細かいことを言うと、UEFIはハードウェアを動かす役割のファームウェアの仕様を定めたものであり、プログラムではありません。
+                        <br>しかしOS作りの素人がこんなのを気にしていては埒があきません。BIOSみたいなもんだと認識させていただきます。
+                        <br>UEFIのプログラムは.efiという形式にして実行されます。適切にコンパイル&リンクしてあげれば生成されます。
+                        <br>
+                        <br>コマンド例（Clang & LLD）
+                        <blockquote>
+                            <p>$ clang -target x86_64-pc-win32-coff -mno-red-zone -fno-stack-protector -fshort-wchar -wall -c "ファイル名".c
+                                <br>$ lld-link /subsystem:efi_application /entry:"関数名" /out:"ファイル名".efi "ファイル名".o
+                            </p>
+                        </blockquote>
+                    <p>coff形式で.oファイルを作成 → PE形式で実行ファイル（Windowsの.exeもPE形式）作成という流れですね。
+                    </p>
+                    </p>
+                    
+                    <p><strong>・EDK2</strong></p>
+                    <p>EFI Development Kit II、最近色々と話題のIntel製のUEFIファームウェアとかアプリの開発環境。
+                        <br>EDK2のフォルダの中身を見てみると、その中には大量のフォルダが！全部見てたらキリがないです。
+                        <br>大事なのはedksetup.shとMdePkgでしょうかね？
+                        <br>前者はビルド環境をセットアップするためのスクリプトで、後者はUefi.hとかが入ってるフォルダです。
+                        <br>Uefi.hもインクルードの連続で見るのが億劫になります。お前らどんだけヘッダーファイルあるんだ。
+                        <br>他にもLibraryフォルダのUefiLib.hも追っていたら時間がいくらあっても足りません。こっちは1Fも無駄にできないんだ。
+                        <br>一応、書籍の付録にedk2のファイル説明の一部が載っているのですが、正直ここに載せるほどのことは書いていません。気になるなら本買って見てくれ（ダイマ）
+                    </p>
+
+                    <p><strong>・メモリマップ</strong></p>
+                    <p>メインメモリのどこが・何に・どれだけ使われているかを確認できる。
+                        <br>もし既に使われているアドレスにデータを置こうものなら、当然死は免れられません。
+                        <br>ありがたいことに、BIOSにはメモリマップを確認する機能があります。
+                        <br>ブートサービスを表すグローバル変数gBSを使い、GetMemoryMapという関数を呼び出すことで確認できます。
+                        <br>なお、GetMemoryMapは、OSがUEFIの制御を離れる前（ExitBootServicesの直前）に呼ぶのが一般的です。
+                    </p>
+
+                    <p><strong>・カーネル</strong></p>
+                    <p>ハードウェアの資源管理、ハードウェアとソフトウェアを仲介するプログラム
+                        <br>UEFIの規格通り作る必要があるが、ブートローダーからカーネルを呼び出す形式にすることで、その制約を回避します。
+                        <br>
+                        <br>コマンド例（Clang++ & LLD）
+                        <blockquote>
+                            <p>$ clang++ -O2 -Wall -g --target=x86_64-elf -ffreestanding -mno-red-zone -fno-exceptions -fno-rtti -std=c++17 -c main.cpp
+                                <br>ld.lld --entry KernelMain -z norelro --image-base 0x100000 --static -o kernel.elf main.o
+                            </p>
+                        </blockquote>
+                        <p>カーネルを読み込む際は、UEFIのOpen関数でkernel.elfを読み込み、GetInfo関数でファイル情報を取得します。
+                            <br>GetInfoの4番目の引数が特殊で、EFI_FILE_INFO型の構造体が入るだけのメモリ領域を指定するのですが、ただ指定するだけではいけません。
+                            <br>実は、ここにはelfファイルに付けた名前を格納する必要もあり、その名前の文字数分メモリを多めに確保しなければなりません。
+                            <br>今回のkernel.elfはsizeof(CHAR16) * 12バイトだけ多く確保しています。
+                        </p>
+                    </p>
+
+                    <p><strong>・Graphics Output Protocol</strong></p>
+                    <p>UEFIが提供するグラフィック描画プロトコル
+                        <br>今回はPixelRedGreenBlueReserved8BitPerColorという規格を使用します。
+                        <br>光の三原色でおなじみのRGB（+予約領域 or αチャンネル）を8ビットずつ使うフォーマットです。
+                        <br>この規格は最も描画が楽で、ピクセル単位で1つずつ色を付けていきます。
+                        <br>中には、一度にバッファに情報を格納してから、一気に描画する方法もありますが、実装がとても大変と聞いているためやってません。
+                    </p>
+
+                    <p>思い立ってまとめてみましたが、アフィサイト以下の解説になってしまいました。
+                        <br>まあ別にいいでしょう。こんなの短期間で理解できる訳ないし。
+                        <br>急ぐのはテトリスだけで充分です。
+                    </p>
+
+                </p>
 
                 <li id="20250526">2025/05/26 OS自作5</li>
                 <p>文字の描画をやっていきます。
