@@ -57,7 +57,7 @@ const quiz = [
     { 
         question: 'Q12 12面3枚目のスペカでは、何が起こる？', 
         choices: ['消えロール', 'X-RAY', '操作左右反転'], 
-        correct: '' 
+        correct: '消えロール' 
     },
     { 
         question: 'Q13 13面3枚目のスペカでは、終了時に何が起こる？', 
@@ -90,7 +90,7 @@ const quiz = [
         correct: '3段せり上がり + 市松模様' 
     },
     { 
-        question: 'Q19', 
+        question: 'Q19 ', 
         choices: ['', '', ''], 
         correct: '' 
     },
