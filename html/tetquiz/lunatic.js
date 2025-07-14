@@ -2,7 +2,7 @@ const quiz = [
     { 
         question: 'Q1 TouhouMinoの作者は誰？', 
         choices: ['osk', 'Dimentio', '三原一郎'], 
-        correct: '' 
+        correct: 'Dimentio' 
     },
     { 
         question: 'Q2 2面3枚目のスペカの効果は？', 
@@ -16,8 +16,8 @@ const quiz = [
     },
     { 
         question: 'Q4 4面2枚目のスペカでは、固定猶予は何Fになる？', 
-        choices: ['1', '8', '15'], 
-        correct: '1' 
+        choices: ['0', '8', '15'], 
+        correct: '0' 
     },
     { 
         question: 'Q5 TouhouMino_GMの回転法則は？', 
@@ -50,9 +50,9 @@ const quiz = [
         correct: '上5段が消去される' 
     },
     { 
-        question: 'Q11 11面1枚目のスペカでは、虹色のせり上がり出現するが、最大何列せり上がる？', 
-        choices: ['', '', ''], 
-        correct: '' 
+        question: 'Q11 11面1枚目のスペカでは、何が起こる？', 
+        choices: ['消すと再度せり上がるガベージ出現', '一人で背水の陣を組む', '何も起こらない'], 
+        correct: '消すと再度せり上がるガベージ出現' 
     },
     { 
         question: 'Q12 12面3枚目のスペカでは、何が起こる？', 
@@ -65,9 +65,9 @@ const quiz = [
         correct: 'ダークガベージ消滅' 
     },
     { 
-        question: 'Q14 TouhouMinoで使用されているアレンジ楽曲は何曲使用されている？', 
-        choices: ['', '', ''], 
-        correct: '' 
+        question: 'Q14 TouhouMinoで現在使用されているアレンジ楽曲は何曲ある？', 
+        choices: ['4', '5', '6'], 
+        correct: '5' 
     },
     { 
         question: 'Q15 15面1枚目のスペカでは、何に最も気をつける必要がある？', 
@@ -97,50 +97,50 @@ const quiz = [
     { 
         question: 'Q20 20面2枚目のスペカでは、何が起こる？', 
         choices: ['1,3段目にせり上がり + 2,4段目に空白せり上がり', '消えロール + 落下速度低下', '地形リセット + BIGモード化'], 
-        correct: '' 
+        correct: '地形リセット + BIGモード化' 
     },
     { 
-        question: 'Q21', 
+        question: 'Q21 21面1枚目のスペカでは、何が起こる？', 
+        choices: ['地形が隠れる', '5段せり上がり + NoHold', 'EXCHG FIELD'], 
+        correct: 'EXCHG FIELD' 
+    },
+    { 
+        question: 'Q22 22面2枚目のスペカでは、何が起こる？', 
+        choices: ['16段せり上がり', 'CYCLONE + HideHold', '最上段のみ見える穴バラ出現'], 
+        correct: '16段せり上がり' 
+    },
+    { 
+        question: 'Q23 23面3枚目のスペカは、ワールドルールでは何が起こる？', 
+        choices: ['回転する度にミノが変化', 'TミノとIミノがOミノに変化', '違いはない'], 
+        correct: 'TミノとIミノがOミノに変化' 
+    },
+    { 
+        question: 'Q24 24面4枚目のスペカでは、何が起こる？', 
+        choices: ['NoNext', '地形の左右反転', 'せり上がり + ご先祖様'], 
+        correct: 'せり上がり + ご先祖様' 
+    },
+    { 
+        question: 'Q25 25面では何が起こる？', 
+        choices: ['ライン消去が出来なくなる', '消えロール', 'ご先祖様が出現'], 
+        correct: '消えロール' 
+    },
+    { 
+        question: 'Q26 26面3枚目のスペカでは、何が起こる？', 
         choices: ['', '', ''], 
         correct: '' 
     },
     { 
-        question: 'Q22', 
+        question: 'Q27 27面3枚目のスペカでは、何が起こる？', 
         choices: ['', '', ''], 
         correct: '' 
     },
     { 
-        question: 'Q23', 
+        question: 'Q28 28面3枚目のスペカでは、何が起こる？', 
         choices: ['', '', ''], 
         correct: '' 
     },
     { 
-        question: 'Q24', 
-        choices: ['', '', ''], 
-        correct: '' 
-    },
-    { 
-        question: 'Q25', 
-        choices: ['', '', ''], 
-        correct: '' 
-    },
-    { 
-        question: 'Q26', 
-        choices: ['', '', ''], 
-        correct: '' 
-    },
-    { 
-        question: 'Q27', 
-        choices: ['', '', ''], 
-        correct: '' 
-    },
-    { 
-        question: 'Q28', 
-        choices: ['', '', ''], 
-        correct: '' 
-    },
-    { 
-        question: 'Q29 ', 
+        question: 'Q29 29面では、何が起こる？', 
         choices: ['', '', ''], 
         correct: '' 
     },
