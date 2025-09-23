@@ -50,6 +50,19 @@
     z-index: -1;
 }
 
+.bg_dic{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bgdic.jpg");
+    background-size: cover; 
+    background-position: center;
+    filter: blur(4px) brightness(0.9);
+    z-index: -1;
+}
+
 .bg_mod{
     position: fixed;
     top: 0;
@@ -70,7 +83,7 @@
     background: rgba(225 225, 225, 0.9);
     padding: 0 20px 20px 20px;
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.1;
     letter-spacing: 1px;
 }
 

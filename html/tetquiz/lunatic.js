@@ -20,7 +20,7 @@ const quiz = [
         correct: '0' 
     },
     { 
-        question: 'Q5 TouhouMino_GMの回転法則は？', 
+        question: 'Q5 TouhouMino_GMの回転法則の通称は？', 
         choices: ['SRS-X', 'DRS', 'Classic3'], 
         correct: 'Classic3' 
     },
@@ -71,7 +71,7 @@ const quiz = [
     },
     { 
         question: 'Q15 15面1枚目のスペカでは、何に最も気をつける必要がある？', 
-        choices: ['2段以上のライン消去', 'テトリス回数', '権利侵害'], 
+        choices: ['2段以上のライン消去', 'テトリス回数', 'テトカンの目'], 
         correct: '2段以上のライン消去' 
     },
     { 
@@ -120,22 +120,22 @@ const quiz = [
         correct: 'せり上がり + ご先祖様' 
     },
     { 
-        question: 'Q25 25面では何が起こる？', 
+        question: 'Q25 24面の最後（25面）では何が起こる？', 
         choices: ['ライン消去が出来なくなる', '消えロール', 'ご先祖様が出現'], 
         correct: '消えロール' 
     },
     { 
-        question: 'Q26 26面3枚目のスペカでは、何が起こる？', 
-        choices: ['', '', ''], 
-        correct: '' 
+        question: 'Q26 26面1枚目のスペカでは、何が起こる？', 
+        choices: ['30秒間に15段せり上がり', '35秒間に20段せり上がり', '40秒間に25段せり上がり'], 
+        correct: '35秒間に20段せり上がり' 
     },
     { 
         question: 'Q27 27面3枚目のスペカでは、何が起こる？', 
-        choices: ['', '', ''], 
-        correct: '' 
+        choices: ['ダークガベージ14段 + X-RAY', 'ダークガベージ14段 + HideHold', 'ダークガベージ14段 + NoHold'], 
+        correct: 'ダークガベージ14段 + X-RAY' 
     },
     { 
-        question: 'Q28 28面3枚目のスペカでは、何が起こる？', 
+        question: 'Q28 28面4枚目のスペカでは、何が起こる？', 
         choices: ['', '', ''], 
         correct: '' 
     },
@@ -179,9 +179,9 @@ const Result = () => {
     let resultMessage = document.createElement('p');
     let result = "不合格";
     resultMessage.textContent = "30分前に出直しな！";
-    if (score >= quizLength * 0.8) {
+    if (score === quizLength) {
         result = "合格";
-        resultMessage.textContent = "";
+        resultMessage.textContent = "全部答えられるとは...さてはQBKだな？？？？？";
     }
 
     resultParagraph.textContent = `LUNATICモード ${result}`;
