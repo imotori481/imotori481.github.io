@@ -1,7 +1,7 @@
 const quiz = [
     { 
         question: 'Q1 TouhouMinoの作者は誰？', 
-        choices: ['osk', 'Dimentio', '三原一郎'], 
+        choices: ['太田順也', 'Dimentio', '三原一郎'], 
         correct: 'Dimentio' 
     },
     { 
@@ -136,13 +136,13 @@ const quiz = [
     },
     { 
         question: 'Q28 28面4枚目のスペカでは、何が起こる？', 
-        choices: ['', '', ''], 
-        correct: '' 
+        choices: ['X-RAY + CYCLONE', '地形隠し + CYCLONE', '固定猶予8F + CYCLONE'], 
+        correct: '地形隠し + CYCLONE' 
     },
     { 
-        question: 'Q29 29面では、何が起こる？', 
-        choices: ['', '', ''], 
-        correct: '' 
+        question: 'Q29 29面到達時の地形は？', 
+        choices: ['SAKURAモード 10面', 'SAKRUAモード 20面', 'SAKURAモード EX7面'], 
+        correct: 'SAKURAモード 10面' 
     },
 ];
 
@@ -181,7 +181,7 @@ const Result = () => {
     resultMessage.textContent = "30分前に出直しな！";
     if (score === quizLength) {
         result = "合格";
-        resultMessage.textContent = "全部答えられるとは...さてはQBKだな？？？？？";
+        resultMessage.textContent = "あなたはQBKですか";
     }
 
     resultParagraph.textContent = `LUNATICモード ${result}`;
