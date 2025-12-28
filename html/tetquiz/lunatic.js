@@ -101,8 +101,8 @@ const quiz = [
     },
     { 
         question: 'Q21 21面1枚目のスペカでは、何が起こる？', 
-        choices: ['地形が隠れる', '5段せり上がり + NoHold', 'EXCHG FIELD'], 
-        correct: 'EXCHG FIELD' 
+        choices: ['地形が隠れる', '5段せり上がり + NoHold', 'NEGA FIELD'], 
+        correct: 'NEGA FIELD' 
     },
     { 
         question: 'Q22 22面2枚目のスペカでは、何が起こる？', 
